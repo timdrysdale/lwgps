@@ -37,4 +37,4 @@ test_time.exe: CFLAGS += \
 test_time.exe: ../lwgps/src/lwgps/lwgps.c test_time.c ../dev/VisualStudio/main.c
 
 $(TARGETS) : ../lwgps/src/lwgps/lwgps.c
-	$(CC) -o $@ $(CFLAGS) $^
+	$(CC) -o $@ $(CFLAGS) $^ -lm
